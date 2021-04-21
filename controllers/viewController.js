@@ -90,8 +90,8 @@ exports.getStatistics = (req, res, next) => {
         const user_photo = req.session.userPhoto;
         const loggedInUserID = req.session.loggedInUserID;
 
-        res.status(200).render(`statistics`, {
-            title: `PMS - Statistics`,
+        res.status(200).render(`Expense_Report_Form`, {
+            title: `PMS - Expense_Report_Form`,
             page: `Statistics`,
             user: user_full_name,
             user_photo,
