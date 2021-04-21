@@ -71,8 +71,8 @@ exports.getProject = (req, res, next) => {
         const loggedInUserID = req.session.loggedInUserID;
 
         res.status(200).render(`projects`, {
-            title: `PMS - Projects Management`,
-            page: `Projects Management`,
+            title: `PMS - Projects`,
+            page: `Projects`,
             user: user_full_name,
             user_photo,
             loggedInUserID
@@ -80,7 +80,8 @@ exports.getProject = (req, res, next) => {
         });
     } else {
         res.redirect('/');
-    }
+
+    };
 };
 
 exports.getStatistics = (req, res, next) => {
