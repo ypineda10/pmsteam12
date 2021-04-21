@@ -22,35 +22,35 @@
 <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
 <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.24937" type="text/javascript"></script>
 script(type="text/javascript").
-	JotForm.init(function(){
+  JotForm.init(function(){
 
- JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
- JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
- JotForm.calendarOther = {"today":"Today"};
- var languageOptions = document.querySelectorAll('#langList li'); 
- for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
-   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("8", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
- } 
- JotForm.setCalendar("8", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""});
- JotForm.displayLocalTime("input_8_hourSelect", "input_8_minuteSelect","input_8_ampm", "input_8_timeInput", true);
-if (window.JotForm && JotForm.accessible) $('input_15').setAttribute('tabindex',0);
+  JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+  JotForm.calendarOther = {"today":"Today"};
+  var languageOptions = document.querySelectorAll('#langList li'); 
+  for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+    languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("8", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
+  } 
+  JotForm.setCalendar("8", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""});
+  JotForm.displayLocalTime("input_8_hourSelect", "input_8_minuteSelect","input_8_ampm", "input_8_timeInput", true);
+  if (window.JotForm && JotForm.accessible) $('input_15').setAttribute('tabindex',0);
       setTimeout(function() {
           $('input_15').hint('ex: $1,200.50');
-       }, 20);
-if (window.JotForm && JotForm.accessible) $('input_6').setAttribute('tabindex',0);
-	JotForm.newDefaultTheme = true;
-	JotForm.extendsNewTheme = false;
-	JotForm.newPaymentUIForNewCreatedForms = false;
-	JotForm.newPaymentUI = true;
+        }, 20);
+  if (window.JotForm && JotForm.accessible) $('input_6').setAttribute('tabindex',0);
+  JotForm.newDefaultTheme = true;
+  JotForm.extendsNewTheme = false;
+  JotForm.newPaymentUIForNewCreatedForms = false;
+  JotForm.newPaymentUI = true;
       JotForm.alterTexts(undefined);
-	JotForm.clearFieldOnHide="disable";
-	JotForm.submitError="jumpToFirstError";
+  JotForm.clearFieldOnHide="disable";
+  JotForm.submitError="jumpToFirstError";
     /*INIT-END*/
-	});
+  });
 
-   JotForm.prepareCalculationsOnTheFly([null,{"name":"expenseReport","qid":"1","text":"Expense Report Form","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},{"name":"employeeName","qid":"3","text":"Employee Name","type":"control_dropdown"},null,{"name":"expenseType","qid":"5","text":"Expense Type","type":"control_radio"},{"name":"description","qid":"6","text":"Description","type":"control_textarea"},null,{"name":"dateamp8","qid":"8","text":"Date & Time of the Expense","type":"control_datetime"},null,{"name":"paymentType","qid":"10","text":"Payment Type","type":"control_radio"},null,{"name":"department","qid":"12","text":"Department","type":"control_dropdown"},null,null,{"name":"cost","qid":"15","text":"Cost","type":"control_textbox"}]);
-   setTimeout(function() {
-JotForm.paymentExtrasOnTheFly([null,{"name":"expenseReport","qid":"1","text":"Expense Report Form","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},{"name":"employeeName","qid":"3","text":"Employee Name","type":"control_dropdown"},null,{"name":"expenseType","qid":"5","text":"Expense Type","type":"control_radio"},{"name":"description","qid":"6","text":"Description","type":"control_textarea"},null,{"name":"dateamp8","qid":"8","text":"Date & Time of the Expense","type":"control_datetime"},null,{"name":"paymentType","qid":"10","text":"Payment Type","type":"control_radio"},null,{"name":"department","qid":"12","text":"Department","type":"control_dropdown"},null,null,{"name":"cost","qid":"15","text":"Cost","type":"control_textbox"}]);}, 20); 
+    JotForm.prepareCalculationsOnTheFly([null,{"name":"expenseReport","qid":"1","text":"Expense Report Form","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},{"name":"employeeName","qid":"3","text":"Employee Name","type":"control_dropdown"},null,{"name":"expenseType","qid":"5","text":"Expense Type","type":"control_radio"},{"name":"description","qid":"6","text":"Description","type":"control_textarea"},null,{"name":"dateamp8","qid":"8","text":"Date & Time of the Expense","type":"control_datetime"},null,{"name":"paymentType","qid":"10","text":"Payment Type","type":"control_radio"},null,{"name":"department","qid":"12","text":"Department","type":"control_dropdown"},null,null,{"name":"cost","qid":"15","text":"Cost","type":"control_textbox"}]);
+    setTimeout(function() {
+  JotForm.paymentExtrasOnTheFly([null,{"name":"expenseReport","qid":"1","text":"Expense Report Form","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},{"name":"employeeName","qid":"3","text":"Employee Name","type":"control_dropdown"},null,{"name":"expenseType","qid":"5","text":"Expense Type","type":"control_radio"},{"name":"description","qid":"6","text":"Description","type":"control_textarea"},null,{"name":"dateamp8","qid":"8","text":"Date & Time of the Expense","type":"control_datetime"},null,{"name":"paymentType","qid":"10","text":"Payment Type","type":"control_radio"},null,{"name":"department","qid":"12","text":"Department","type":"control_dropdown"},null,null,{"name":"cost","qid":"15","text":"Cost","type":"control_textbox"}]);}, 20); 
 </head>
 <body>
 <form class="jotform-form" action="https://submit.jotform.com/submit/211097499488170/" method="post" name="form_211097499488170" id="211097499488170" accept-charset="utf-8" autocomplete="on">
